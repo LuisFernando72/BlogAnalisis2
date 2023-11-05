@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -51,7 +52,9 @@
 }
 
 /*=============== BASE ===============*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -70,7 +73,9 @@ body {
   transition: .5s;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
   line-height: 1.5;
@@ -107,29 +112,32 @@ body.dark-theme {
   right: 1.5rem;
   top: 2.2rem;
   color: var(--title-color);
-  font-size:2.2rem;
+  font-size: 2.2rem;
   cursor: pointer;
 }
 
- 
-.resumen__description p{
+
+.resumen__description p {
   width: 100%;
   display: flex;
+  text-align: justify;
 }
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 1rem 0;
 }
 
-.section__title, .section__title-center {
+.section__title,
+.section__title-center {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: center;
   margin-bottom: var(--mb-1);
 }
 
- 
- 
+
+
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 968px;
@@ -185,10 +193,15 @@ body.dark-theme {
   row-gap: 1.5rem;
 }
 
-.nav__link, .nav__logo, .nav__toggle {
-  color: var(--title-color);
+.nav__link,
+.nav__logo,
+.nav__toggle {
+  color:black;
   font-size: 1.1rem;
   /* font-weight: var(--font-semi-bold); */
+}
+.nav__link:hover{
+  font-weight: bold;
 }
 
 .nav__toggle {
@@ -301,21 +314,28 @@ body.dark-theme {
   padding-top: 1rem;
 }
 
+.personajes__subtitle {
+  text-align: center;
+}
+
 .personajes__data {
   display: grid;
   row-gap: 1rem;
   background-color: var(--container-color);
-  box-shadow: 0px 2px 6px hsla(var(--color1), 100%, 15%, 0.15);
+  box-shadow: 0px 4px 6px hsla(var(--color1), 100%, 15%, 0.15);
   padding: 2rem 1.5rem;
   border-radius: 1rem;
-  text-align: center;
+  text-align: justify;
 }
 
-.personajes__img {
-  width: 135px;
+.personajes__data img {
+  width: 90%;
+  height: 14rem;
+  object-fit: cover;
   justify-self: center;
   margin-bottom: var(--mb-0-5);
 }
+
 
 /*=============== APP ===============*/
 .app__container {
@@ -337,7 +357,7 @@ body.dark-theme {
   gap: .5rem;
 }
 
- 
+
 
 /*=============== SCROLL UP ===============*/
 .scrollup {
@@ -390,12 +410,15 @@ body.dark-theme {
   .svg__img {
     width: 100%;
   }
+
   .section {
     padding: 3.5rem 0 1rem;
   }
+
   .personajes__img {
     width: 100px;
   }
+
   .app__buttons {
     grid-template-columns: max-content;
   }
@@ -406,9 +429,11 @@ body.dark-theme {
   .svg__img {
     width: 100%;
   }
+
   .section__title-center {
     text-align: initial;
   }
+
   .home__container,
   .resumen__container,
   .security__container,
@@ -418,9 +443,11 @@ body.dark-theme {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .home__img {
     order: 1;
   }
+
   .home__container,
   .resumen__container,
   .security__container,
@@ -428,12 +455,14 @@ body.dark-theme {
   .valores__container {
     align-items: center;
   }
+
   .resumen__data,
   .security__data,
   .app__data,
   .valores__description {
     text-align: initial;
   }
+
   .resumen__img,
   .app__img {
     order: -1;
@@ -444,25 +473,32 @@ body.dark-theme {
   body {
     margin: 0;
   }
+
   .section {
     padding: 6rem 0 2rem;
   }
+
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+
   .nav__list {
     flex-direction: row;
     column-gap: 2.5rem;
   }
+
   .nav__toggle {
     display: none;
   }
+
   .change-theme {
     position: initial;
   }
+
   .home__container {
     padding: 6rem 0 2rem;
   }
+
   .app__buttons {
     justify-content: initial;
   }
@@ -473,27 +509,34 @@ body.dark-theme {
   .button__header {
     display: block;
   }
+
   .svg__img {
     width: 470px;
   }
+
   .resumen__container,
   .security__container,
   .app__container,
   .valores__container {
     column-gap: 2rem;
   }
+
   .personajes__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .valores__container {
     grid-template-columns: 3fr 1.5fr 1.25fr;
   }
+
   .footer__container {
     grid-template-columns: repeat(5, 1fr);
   }
+
   .footer__social {
     align-items: flex-start;
   }
+
   .footer__social-link {
     font-size: 1.45rem;
   }
@@ -504,15 +547,19 @@ body.dark-theme {
     margin-left: auto;
     margin-right: auto;
   }
+
   .home__img {
     width: 540px;
   }
+
   .home__description {
     padding-right: 5rem;
   }
+
   .footer__container {
     column-gap: 3rem;
   }
+
   .scrollup {
     right: 2rem;
   }
