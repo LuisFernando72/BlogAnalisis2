@@ -5,7 +5,7 @@
 :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
-  --color1: 98;
+  --color1: 140;
   --color2: 100%;
   --first-color: hsl(var(--color1), var(--color2), 60%);
   --first-color-light: hsl(var(--color1), var(--color2), 85%);
@@ -96,6 +96,8 @@ img {
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
+
+
 body.dark-theme {
   --first-color-light: hsl(var(--color1), var(--color2), 75%);
   --title-color: hsl(var(--color1), 4%, 95%);
@@ -153,7 +155,7 @@ body.dark-theme {
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
-  background-color: rgba(168, 255, 136, 0.989);
+  background-color: rgba(121, 255, 146, 0.989);
   position: fixed;
   top: 0;
   left: 0;
