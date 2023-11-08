@@ -104,5 +104,5 @@ themeButton.addEventListener("click", () => {
 });
 
 document.querySelector("#btnbien").addEventListener("click", () => {
-  alert("Este blog es con fines de practica");
+  alert("Buen día, este blog es con fines de práctca!! :))");
 });

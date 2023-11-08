@@ -198,11 +198,12 @@ body.dark-theme {
 .nav__link,
 .nav__logo,
 .nav__toggle {
-  color:black;
+  color: var(--title-color);
   font-size: 1.1rem;
   /* font-weight: var(--font-semi-bold); */
 }
-.nav__link:hover{
+
+.nav__link:hover {
   font-weight: bold;
 }
 
@@ -338,6 +339,10 @@ body.dark-theme {
   margin-bottom: var(--mb-0-5);
 }
 
+.valores__container p {
+  text-align: justify;
+}
+
 
 /*=============== APP ===============*/
 .app__container {
@@ -470,6 +475,7 @@ body.dark-theme {
     order: -1;
   }
 }
+
 
 @media screen and (min-width: 767px) {
   body {
